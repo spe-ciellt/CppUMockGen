@@ -12,6 +12,9 @@ if( NOT CHECK_COMPILATION )
     add_definitions( -DDISABLE_COMPILATION_CHECK )
 endif()
 
+set( CPPUTEST_HOME /usr )
+set( TARGET_PLATFORM x86_64-linux-gnu )
+
 # Test modules
 
 add_subdirectory( App )

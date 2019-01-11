@@ -2,11 +2,11 @@ cmake_minimum_required( VERSION 3.3 )
 
 project( CppUMockGen.Top )
 
-option( ENABLE_TEST "Enable building tests" ON )
+option( ENABLE_TEST "Enable building tests" OFF )
 option( CI_MODE "Enable continuous integration mode" OFF )
 
 if( CMAKE_CONFIGURATION_TYPES )
-    option( COVERAGE "Enable coverage analysis" ON )
+    option( COVERAGE "Enable coverage analysis" OFF )
 else()
     set( DEFAULT_BUILD_TYPE "Release" )
 
